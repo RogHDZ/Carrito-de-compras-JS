@@ -32,7 +32,7 @@ const agregarCarrito = curso => {
     listadoCarrito.forEach(curso => console.log(curso.id));*/
     if(listadoCarrito.some(cursoInCarrito => cursoInCarrito.id === curso.id)){
         let carrito = listadoCarrito.map(cursoInCarrito => {
-            if (cursoInCarrito.id = curso.id){
+            if (cursoInCarrito.id === curso.id){
                 cursoInCarrito.cantidad++;
                 return cursoInCarrito;
             } else {
