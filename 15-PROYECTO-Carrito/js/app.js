@@ -93,7 +93,7 @@ const cargarEventListener = () => {
 
     const carritoInStorage = localStorage.getItem('carrito')
     if(carritoInStorage){
-        listadoCarrito = JSON,parse(carritoInStorage);
+        listadoCarrito = JSON.parse(carritoInStorage);
         generalHTML();
     }
 }
